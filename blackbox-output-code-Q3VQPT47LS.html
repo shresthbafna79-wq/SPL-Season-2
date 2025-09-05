@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPL Season 2 - Maratha Maharashtra vs Thunder Strikers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        .team-card {
+            transition: transform 0.3s ease;
+        }
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="text-white">
+    <header class="bg-black bg-opacity-80 p-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-2">SPL Season 2</h1>
+            <div class="featured-image mb-4">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b0e112d1-a972-4ce6-9d13-0c715d0cba0d.png" alt="Intense cricket match scene between Maratha Maharashtra and Thunder Strikers teams on a lush green cricket ground under sunny skies with cheering crowds in the background, showcasing the excitement of the SPL tournament" class="w-full h-64 object-cover rounded-lg shadow-lg" />
+            </div>
+            <h2 class="text-2xl">Maratha Maharashtra (MM) vs Thunder Strikers (TS)</h2>
+        </div>
+    </header>
+
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-semibold text-center mb-8">Team Squads</h3>
+            <div class="team-grid grid grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="team-card bg-gradient-to-r from-blue-600 to-blue-800 p-6 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-bold mb-4">Maratha Maharashtra (MM)</h4>
+                    <ul class="list-disc list-inside">
+                        <li>Shresth (C)</li>
+                        <li>Ayush</li>
+                        <li>Aarav</li>
+                        <li>Anay</li>
+                        <li>Ritik</li>
+                        <li>Atharva</li>
+                        <li>Rahul</li>
+                        <li>Bhavya</li>
+                    </ul>
+                </div>
+                <div class="team-card bg-gradient-to-r from-red-600 to-red-800 p-6 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-bold mb-4">Thunder Strikers (TS)</h4>
+                    <ul class="list-disc list-inside">
+                        <li>Aditya (C)</li>
+                        <li>Aryan</li>
+                        <li>Nilesh</li>
+                        <li>Sadanand</li>
+                        <li>Ahaan</li>
+                        <li>Akul</li>
+                        <li>Harsh</li>
+                        <li>Harshit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-white text-gray-900">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-semibold text-center mb-8">Register for SPL</h3>
+            <p class="text-center mb-6">Registration requires 60 rs cash (mandatory). Age and other details are compulsory; email is optional.</p>
+            <form id="registration-form" class="max-w-md mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="reg-name" class="block text-sm font-medium">Full Name</label>
+                    <input type="text" id="reg-name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label for="reg-age" class="block text-sm font-medium">Age</label>
+                    <input type="number" id="reg-age" name="age" required min="1" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label for="reg-phone" class="block text-sm font-medium">Phone Number</label>
+                    <input type="tel" id="reg-phone" name="phone" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label for="reg-address" class="block text-sm font-medium">Address</label>
+                    <textarea id="reg-address" name="address" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="reg-email" class="block text-sm font-medium">Email (Optional)</label>
+                    <input type="email" id="reg-email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" id="cash-paid" required class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <span class="ml-2 text-sm">I have paid 60 rs cash for registration</span>
+                    </label>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-semibold text-center mb-8">Banned Players Apology</h3>
+            <p class="text-center mb-6">If you've been banned due to past incidents, fill this form to apologize. We will review and decide.</p>
+            <form id="banned-form" class="max-w-md mx-auto bg-gray-100 p-6 rounded-lg shadow-md text-gray-900">
+                <div class="mb-4">
+                    <label for="ban-name" class="block text-sm font-medium">Full Name</label>
+                    <input type="text" id="ban-name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label for="ban-reason" class="block text-sm font-medium">Reason for Ban</label>
+                    <textarea id="ban-reason" name="reason" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="ban-apology" class="block text-sm font-medium">Apology Message</label>
+                    <textarea id="ban-apology" name="apology" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Submit Apology</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            console.log('Registration Data:', Object.fromEntries(formData));
+            alert('Registration submitted successfully! Check console for details.');
+            // In a real app, send to server
+        });
+
+        document.getElementById('banned-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            console.log('Banned Player Data:', Object.fromEntries(formData));
+            alert('Apology submitted! We will review it.');
+            // In a real app, send to server
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
